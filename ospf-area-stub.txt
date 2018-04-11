@@ -9,3 +9,9 @@ add advertise=yes area=pppoe1 range=10.0.0.0/20
 
 /routing ospf interface
 add interface=all passive=yes
+
+Obs.: LEMBRE-SE de adicionar as interfaces de 
+comunicação OSPF manualmente.
+
+(A rota estática blackhole para a network do pppoe 
+será criada automaticamente pelo MK)
