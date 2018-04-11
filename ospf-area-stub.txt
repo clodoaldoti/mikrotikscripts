@@ -1,0 +1,11 @@
+/routing ospf area
+add area-id=0.0.0.1 name=pppoe1 type=stub
+
+/routing ospf network
+add area=pppoe1 network=10.0.0.0/20
+
+/routing ospf area range
+add advertise=yes area=pppoe1 range=10.0.0.0/20
+
+/routing ospf interface
+add interface=all passive=yes
